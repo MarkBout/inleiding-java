@@ -6,7 +6,7 @@ public class Stoplicht extends Applet
 {
     public void init() {
     }
-
+    //Stoplicht met kleuren
     public void paint(Graphics g) {
         g.setColor(Color.black);
         g.fillRoundRect(50 , 100 , 100, 300, 10, 10);
