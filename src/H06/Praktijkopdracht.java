@@ -10,6 +10,7 @@ public class Praktijkopdracht extends Applet {
     double uitkomst;
     int conversie;
     double resultaat;
+    double gemiddelde;
 
     public void init() {
         cijfer1 = 5.9;
@@ -18,17 +19,20 @@ public class Praktijkopdracht extends Applet {
         uitkomst = 0;
         conversie = 0;
         resultaat = 0;
+        gemiddelde = 0;
     }
 
     public void paint(Graphics g) {
         //gemiddelde wordt berekend geconverteerd naar int en weer terug naar double
         uitkomst = (cijfer1 + cijfer2 + cijfer3) / 3;
-        conversie = (int) uitkomst *10;
+        uitkomst = uitkomst*10;
+        conversie = (int) uitkomst;
         resultaat = conversie;
-        resultaat = resultaat / 10;
+        gemiddelde = resultaat /10;
+
 
         //weergeven resultaat
-        g.drawString("Je gemiddelde is: " + resultaat, 20, 20);
+        g.drawString("Je gemiddelde is: " + gemiddelde, 20, 20);
 
 
     }
