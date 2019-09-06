@@ -10,6 +10,7 @@ public class Staafdiagram2 extends Applet{
     int gewichtHans;
     int hoogteXas;
     int ruimte;
+    Color tekstkleur;
 
 
     public void init() {
@@ -19,6 +20,7 @@ public class Staafdiagram2 extends Applet{
          gewichtHans = 80;
          hoogteXas = 350;
          ruimte = 10;
+         tekstkleur = Color.black;
     }
 
 
@@ -37,5 +39,33 @@ public class Staafdiagram2 extends Applet{
             //Hans
         d.setColor(Color.RED);
         d.fillRect(150 + 60, hoogteXas - gewichtHans, 50, gewichtHans);
+        //teksten en numering van tabel
+            //Valerie
+        d.setColor(tekstkleur);
+        d.drawString("Valerie", 75, hoogteXas +15);
+            //Hans
+        d.setColor(tekstkleur);
+        d.drawString("Hans", 210, hoogteXas +15);
+            //Jeroen
+        d.setColor(tekstkleur);
+        d.drawString("Jeroen", 140, hoogteXas +15);
+        //Nummering
+        d.drawString("0", 35, hoogteXas);
+        d.drawString("20", 35, hoogteXas - 20);
+        d.drawString("40", 35, hoogteXas - 40);
+        d.drawString("60", 35, hoogteXas - 60);
+        d.drawString("80", 35, hoogteXas - 80);
+        d.drawString("100", 27, hoogteXas - 100);
+        d.drawString("120", 27, hoogteXas - 120);
+        d.drawString("140", 27, hoogteXas - 140);
+        d.drawString("160", 27, hoogteXas - 160);
+        d.drawString("180", 27, hoogteXas - 180);
+        d.drawString("200", 27, hoogteXas - 200);
+        d.drawString("220", 27, hoogteXas - 220);
+        d.drawString("240", 27, hoogteXas - 240);
+        d.drawString("260", 27, hoogteXas - 260);
+        d.drawString("280", 27, hoogteXas - 280);
+        d.drawString("300", 27, hoogteXas - 300);
+
     }
 }
