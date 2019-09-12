@@ -50,7 +50,10 @@ public class Opdracht104 extends Applet {
                     maand = "Januari";
                     break;
                 case 2:
-                    aantal = "28";
+                    if( (jaar % 4 == 0 && !(jaar % 100 == 0)) ||
+                            jaar % 400 == 0 ){aantal = "29";}
+                    else {
+                        aantal = "28";}
                     maand = "Februari";
                     break;
                 case 3:
