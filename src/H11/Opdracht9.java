@@ -13,10 +13,11 @@ public class Opdracht9 extends Applet {
     }
 
     public void paint(Graphics g) {
+        //rijenTeller
         for (rij = 0; rij < 8; ) {
-
+            //X-as steeds op de goede plek zetten
             int x = 50;
-            //eerste rij
+            //Rijen met eerste bloke zwart
             if (rij == 0 || rij == 2 || rij == 4 || rij == 6) {
                 for (int kolom = 0; kolom <= 8; kolom++) {
                     //velden zwart/wit maken
@@ -31,8 +32,10 @@ public class Opdracht9 extends Applet {
                     x += 20;
 
                 }
+                //ruimte maken voor rij eronder
                 y += 20;
             }
+            //Rijen met eerste bloke wit
             else if (rij == 1 || rij == 3 || rij == 5 || rij == 7) {
                 for (int kolom = 0; kolom <= 8; kolom++) {
                     //velden zwart/wit maken
@@ -46,6 +49,7 @@ public class Opdracht9 extends Applet {
                     //opschuiven voor volgende vierkant
                     x += 20;
                 }
+                //ruimte maken voor rijen eronder
                 y += 20;
             }
             rij++;
